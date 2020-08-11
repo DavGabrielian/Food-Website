@@ -1,0 +1,6 @@
+.sidebar {
+    display: none;
+    z-index: 2;
+    width: 40%;
+    min-width: 30rem;
+}
