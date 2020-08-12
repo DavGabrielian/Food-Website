@@ -4,100 +4,181 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap"
+      rel="stylesheet"
+    />
     <title>Hello Food</title>
   </head>
   <body>
     <header>
       <nav id="SideBar" class="sidebar">
-        <a onclick="closeNav()"> &#x2630; </a>
-        <a href="#food" onclick="closeNav()">Food</a>
-        <a href="#about" onclick="closeNav()">About</a>
+        <a class="sidebar-item" onclick="closeNav()"> Close Menu </a>
+        <a class="sidebar-item" href="#food" onclick="closeNav()">Food</a>
+        <a class="sidebar-item" href="#about" onclick="closeNav()">About</a>
       </nav>
-      <a onclick="openNav()">
-        &#x2630;
-      </a>
-      <h2>My Food</h2>
-      <h2>Mail</h2>
+
+      <nav class="navbar">
+        <ul>
+          <li class="sidebar-item" onclick="openNav()">
+            &#x2630;
+          </li>
+          <li class="navbar-item">Home</li>
+          <li class="navbar-item">My Food</li>
+          <li class="navbar-item">Mail</li>
+          <li class="navbar-item">
+            Services
+            <ul>
+              <li>Meals</li>
+              <li>Drinks</li>
+              <li>Coctails</li>
+              <li>
+                Sweets
+                <ul>
+                  <li>Cakes</li>
+                  <li>Desserts</li>
+                  <li>Candy</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar-item">Contact</li>
+          <li class="navbar-item">Portfolio</li>
+          <li class="navbar-item">Courses</li>
+          <li class="navbar-item">Blog</li>
+          <li class="navbar-item">Pictures</li>
+          <li class="navbar-item">Videos</li>
+          <li class="navbar-item">More</li>
+        </ul>
+      </nav>
     </header>
     <!-- the food section-->
     <section id="food">
-      <!-- the grid section -->
-      <div>
-        <img />
-        <h3></h3>
-        <p></p>
-      </div>
-      <div>
-        <img />
-        <h3></h3>
-        <p></p>
-      </div>
-      <div>
-        <img />
-        <h3></h3>
-        <p></p>
-      </div>
-      <div>
-        <img />
-        <h3></h3>
-        <p></p>
-      </div>
-      <div>
-        <img />
-        <h3></h3>
-        <p></p>
-      </div>
-      <div>
-        <img />
-        <h3></h3>
-        <p></p>
-      </div>
-      <div>
-        <img />
-        <h3></h3>
-        <p></p>
-      </div>
-      <div>
-        <img />
-        <h3></h3>
-        <p></p>
+      <ul class="food-items">
+        <li>
+          <img src="img/1.jpg" />
+          <h3>Le French</h3>
+          <p>
+            Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+          </p>
+        </li>
+        <li>
+          <img src="img/2.jpg" />
+          <h3>The Perfect Sandwich, A Real Classic</h3>
+          <p>
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </li>
+        <li>
+          <img src="img/3.jpg" />
+          <h3>Salmon For Your Skin</h3>
+          <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </li>
+        <li>
+          <img src="img/4.jpg" />
+          <h3>All I Need Is a Popsicle</h3>
+          <p>
+            Once again, some random text to lorem lorem lorem lorem ipsum text
+            praesent tincidunt ipsum lipsum.
+          </p>
+        </li>
+        <li>
+          <img src="img/5.jpg" />
+          <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+          <p>
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </li>
+        <li>
+          <img src="img/6.jpg" />
+          <h3>Cherries, interrupted</h3>
+          <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        </li>
+        <li>
+          <img src="img/7.jpg" />
+          <h3>Let Me Tell You About This Steak</h3>
+          <p>
+            Once again, some random text to lorem lorem lorem lorem ipsum text
+            praesent tincidunt ipsum lipsum.
+          </p>
+        </li>
+        <li>
+          <img src="img/8.jpg" />
+          <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+          <p>
+            Just some random text, lorem ipsum text praesent tincidunt ipsum
+            lipsum.
+          </p>
+        </li>
+      </ul>
+      <div class="page-div">
+        <ul class="page">
+          <li>&larr;</li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>&rarr;</li>
+        </ul>
       </div>
     </section>
     <hr />
     <!-- the about section-->
 
-    <section id="about">
-      <h3></h3>
-      <br />
-      <img src="" alt="" />
+    <section id="about" class="about">
+      <h2>About Me, The Food Man</h2>
+      <img src="img/chef.jpg" />
       <div>
-        <strong><h4></h4></strong>
-        <h6><i></i></h6>
-        <p></p>
+        <strong><h3>I am Who I Am!</h3></strong>
+        <h4><i>With Passion For Real, Good Food </i></h4>
+        <p>
+          Just me, myself and I, exploring the universe of unknownment. I have a
+          heart of love and an interest of lorem ipsum and mauris neque quam
+          blog. I want to share my world with you. Praesent tincidunt sed tellus
+          ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+          congue gravida diam non fringilla. Praesent tincidunt sed tellus ut
+          rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+          congue gravida diam non fringilla.
+        </p>
       </div>
     </section>
     <hr />
     <!-- the footer section -->
-    <footer>
-      <div>
-        <h3></h3>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-      <div>
-        <h3></h3>
+    <ul class="footer">
+      <li>
+        <h3>FOOTER</h3>
         <p>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          This was created as a HTML/CSS lesson, this tamplate is from W3schools
         </p>
-      </div>
-    </footer>
+        <p>&copy; David Gabrielian</p>
+      </li>
+      <li>
+        <h3>BLOG POSTS</h3>
+        <ul>
+          <li>
+            <img src="img/blog1.jpg" />
+            <span>Lorem Sed mattis nunc</span>
+          </li>
+          <li>
+            <img src="img/blog2.jpg" />
+            <span>Ipsum Praes tinci sed</span>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h3>POPULAR TAGS</h3>
+        <ul>
+          <li>Travel</li>
+          <li>Ideas</li>
+          <li>France</li>
+          <li>Fish</li>
+          <li>New York</li>
+          <li>Drinks</li>
+        </ul>
+      </li>
+    </ul>
     <script src="app.js"></script>
   </body>
 </html>
