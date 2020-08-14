@@ -102,32 +102,31 @@ p {
 
 /* THE NAVBAR HELL ENDS */
 
+.food {
+  padding: 30px;
+}
+
 .food-items {
   display: flex;
-  flex-flow: row wrap;
-  padding: 30px;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .food-items > li {
-  flex: 2 2 50vh;
   list-style-type: none;
-  margin: 1px;
-  text-align: center;
-  font-size: 15px;
+  flex: 1 1 20%;
+  padding: 0 1px 30px;
+  width: 90%;
 }
 
 .food-items > li > img {
-  max-width: 70%;
-  max-height: 70%;
-  
+  width: 90%;
 }
 
 .food-items > p {
   text-align: center !;
-
 }
-
 
 .page {
   text-align: center;
@@ -208,20 +207,35 @@ p {
 }
 
 .tags {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin-block-start: 1px;
-  margin-block-end: 1px;
-  margin-inline-start: 10px;
-  margin-inline-end: 10px;
+  flex-direction: row;
 }
 
 .tags > li {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: white;
+  background-color: #616161;
+}
+
+.tags > li:first-child {
+  font-size: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: black;
+}
+
+/* .tags > li {
   flex: 1;
   font-size: 13px;
   margin-bottom: 16px;
   align-content: space-between;
-  color: white;
-  background-color: grey;
-}
+} */
